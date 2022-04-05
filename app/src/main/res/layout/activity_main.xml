@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_margin="10dp"
+        android:text="선택을 시작 하시겠 습니까?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/ChkAgree"
+        android:text="시작함"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text2"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:text="좋아 하는 애완동물은?" />
+
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/RdoDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강아지"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/RdoCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고양이" />
+        <RadioButton
+            android:id="@+id/RdoRabbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토끼" />
+    </RadioGroup>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImgPet"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:id="@+id/button1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="처음으로"
+        android:id="@+id/button2" />
+
+
+
+
+
+
+
+</LinearLayout>
